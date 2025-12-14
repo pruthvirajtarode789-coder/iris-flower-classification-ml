@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Classification</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Iris Flower Classification</h1>
+        <form id="iris-form" method="post">
+            <div class="input-group">
+                <label>Sepal Length</label>
+                <input type="number" step="any" name="sl" required>
+            </div>
+            <div class="input-group">
+                <label>Sepal Width</label>
+                <input type="number" step="any" name="sw" required>
+            </div>
+            <div class="input-group">
+                <label>Petal Length</label>
+                <input type="number" step="any" name="pl" required>
+            </div>
+            <div class="input-group">
+                <label>Petal Width</label>
+                <input type="number" step="any" name="pw" required>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result">{{ result }}</div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
